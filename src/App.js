@@ -20,7 +20,7 @@ const App = () => {
       }
       setData(data);
     } catch (error) {
-      alert("err", error);
+      console.log(error);
     } finally {
       setLoading(false);
     }
