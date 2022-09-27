@@ -104,7 +104,7 @@ const App = () => {
                 {loading ? (
                   <div className="items-center justify-center flex relative">
                     <TailSpin
-                    height="80"
+                    height="40"
                     width="80"
                     color="#4fa94d"
                     ariaLabel="tail-spin-loading"
