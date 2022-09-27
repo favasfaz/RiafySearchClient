@@ -13,15 +13,13 @@ const App = () => {
     try {
       setLoading(true);
       const { data } = await axios.get(
-        "https://stock-machine-test.herokuapp.com/api"
+        "https://riafyserver.herokuapp.com/api"
       );
-      setLoading(false)
       if (!data) {
         alert("something went wrong...");
       }
       setData(data);
     } catch (error) {
-      setLoading(false);
       alert("err", error);
     } finally {
       setLoading(false);
